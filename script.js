@@ -13,3 +13,12 @@ document.addEventListener("click", function(e){
         toggleNav();
     }
 })
+
+// Sticky header
+window.addEventListener("scroll",function(){
+    if(this.pageYoffset > 60 ){
+        document.querySelector(".header").classList.add("sticky")
+    }else{
+        document.querySelector(".header").classList.remove("sticky")
+    }
+})
