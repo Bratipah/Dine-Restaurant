@@ -80,6 +80,20 @@ ul{
     justify-content: center;
 }
 
+.header .nav-toggler.active{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+    transform: translateX(-200px);
+}
+
+.header .nav-toggler.active span{
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+}
+
 .header .nav-toggler span{
     height: 2px;
     width: 30px;
@@ -103,9 +117,20 @@ ul{
     transform: translateY(-8px);
 }
 
+.header .nav-toggler.active span::before{
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
 .header .nav-toggler span::after{
     transform: translateY(8px);
 }
+
+.header .nav-toggler.active span::after{
+    transform: rotate(-45deg);
+    transition: transform 0.5s ease;
+}
+
 .header .nav{
     position: fixed;
     right: 0;

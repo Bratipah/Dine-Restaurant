@@ -6,3 +6,10 @@ function toggleNav(){
     navToggler.classList.toggle("active")
     document.querySelector(".nav").classList.toggle("open")
 }
+
+// close nav onclick on nav item
+document.addEventListener("click", function(e){
+    if(e.target.closest("nav-item")){
+        toggleNav();
+    }
+})
