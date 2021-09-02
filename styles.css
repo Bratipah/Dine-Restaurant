@@ -63,7 +63,9 @@ h6{
     color: var(--white);
 }
 
-
+p{
+    font-size: 16px;
+}
 .container{
     margin: auto;
     max-width: 1170px;
@@ -82,6 +84,31 @@ h6{
     min-height: 100vh;
 }
 
+.sec-padding{
+    padding: 80px 0;
+}
+
+.section-title{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.section-title h2::before{
+    font-size: 24px;
+    content: attr(data-title);
+    display: block;
+    color: var(--main-color);
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -109,12 +136,20 @@ h6{
 }
 
 /* Animation */
-@keyframes zommInOut{
+@keyframes zoomInOut{
     0%,100%{
         transform: scale(1);
     }
     50%{
         transform: scale(1.1);
+    }
+}
+@keyframes spin01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 /* header */
@@ -298,4 +333,66 @@ h6{
     margin: 0 0 30px;
 }
 
+/* About section */
+.about-section{
+    background-color: var(--dark-light);
+}
 
+.about-text, .about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.about-text p{
+    margin: 0 0 15px;
+}
+
+.about-text .btn{
+    margin: 15px 0 0;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-img .img-box{
+    position: relative;
+}
+
+.about-img .img-box::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--main-color);
+    left: calc(50% - 50px);
+    top:calc(50% - 50px);
+    animation: spin01 10s linear infinite;
+}
+
+.about-img .img-box h3{
+    position: absolute;
+    color: var(--dark);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: var(--cursive-font);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+ /* Testimonials */
+.testimonials-section{
+    background-color: var(--dark);
+}
