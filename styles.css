@@ -8,7 +8,7 @@
     --white: #ffffff;
     --white-light:#ffff;
     --shadow: 0 0 15px rgba(0,0,0,0.25);
-    --cursive-font: font-family: 'Dancing Script', cursive;
+    --cursive-font:'Dancing Script', cursive;
     scroll-behavior: smooth;
 }
 
@@ -80,6 +80,42 @@ h6{
 }
 .min-vh-100{
     min-height: 100vh;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--main-color);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+}
+/* Buttons */
+.btn-default{
+    border: 2px solid var(--main-color);
+}
+
+.btn-default:hover{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+/* Animation */
+@keyframes zommInOut{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
 }
 /* header */
 .header{
@@ -213,6 +249,7 @@ h6{
 /* Home section */
 .home-section{
    position: relative;
+   overflow: hidden;
 }
 
 .home-section::before{
@@ -238,6 +275,7 @@ h6{
     background-size: cover;
     background-position: center;
     z-index: -2;
+    animation: zoomInOut 20s ease infinite;
 }
 .home-section .min-vh-100{
     padding: 100px 0;
@@ -248,6 +286,16 @@ h6{
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.home-text h1{
+    font-family: var(--cursive-font);
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 5px;
+}
+.home-text p{
+    margin: 0 0 30px;
 }
 
 
