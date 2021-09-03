@@ -1,3 +1,8 @@
+// Scroll Animation
+window.addEventListener("load",function(){
+    AOS.init();
+})
+
 // Toggle navbar
 const navToggler = document.querySelector(".nav-toggler")
 navToggler.addEventListener("click",toggleNav)

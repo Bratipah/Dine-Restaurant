@@ -88,6 +88,10 @@ p{
     padding: 80px 0;
 }
 
+.section{
+    overflow: hidden;
+}
+
 .section-title{
     width: 100%;
     padding: 0 15px;
@@ -573,7 +577,7 @@ p{
 /* Media queries */
 @media(max-width: 991px){
     .testi-item{
-        width: calc(50% -30px);
+        width: calc(50% - 30px);
     }
     .team-item{
         width: 50%;
@@ -598,7 +602,7 @@ p{
         font-size: 24px;
     }
     .testi-item{
-        width: calc(100% -30px);
+        width: calc(100% - 30px);
     }
     .footer-item{
         width: 100%;
