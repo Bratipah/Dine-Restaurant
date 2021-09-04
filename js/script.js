@@ -44,5 +44,7 @@ menuTabs.addEventListener("click", function(e){
         const menuSection = document.querySelector(".menu-section");
         menuSection.querySelector(".meun-teb-content.active").classList.remove("active")
         menuSecction.querySelector(target).classList.add("active");
+
+        AOS.init();
     }
 })
