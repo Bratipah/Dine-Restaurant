@@ -156,6 +156,15 @@ p{
         transform: rotate(360deg);
     }
 }
+@keyframes pageLoader{
+    0%,100%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(50px);
+       
+    }
+}
 /* header */
 .header{
     padding: 12px 12px;
@@ -396,6 +405,124 @@ p{
     text-transform: capitalize;
 }
 
+/* Menu  */
+.menu-section{
+    background-color: var(--dark);
+}
+
+.menu-section .section-title{
+    margin-bottom: 40px;
+}
+
+.menu-tabs{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-tab-item{
+    font-size: 18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.menu-tab-item.active{
+    color: var(--main-color);
+}
+
+.menu-tab-content{
+    display: none;
+}
+
+.menu-tab-content.active{
+    display: flex;
+}
+
+.menu-item{
+    width: 50%;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-item-title{
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 80px);
+}
+
+.menu-item-title img{
+    max-width: 100px;
+    margin-right: 15px;
+}
+
+.menu-item-title h3{
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.menu-item::after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-bottom: 2px dashed var(--dark-light);
+}
+
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after{
+    border: none;
+}
+
+.menu-item-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.menu-item:hover .menu-item-title h3{
+    color: var(--main-color);
+}
+
+.menu-item:hover .menu-item-price{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Testimonials */
 .testimonials-section{
     background-color: var(--dark);
@@ -617,4 +744,32 @@ p{
     .team-item{
         width: 100%;
     }
+}
+
+
+/* Page Loader */
+.page-loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--dark);
+    z-index: 999;
+    transition: all 0.6s ease;
+}
+
+.page-loader::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: var(--main-color);
+    left: calc(50% - 50px);
+    top: calc(50% - 2px);
+    animation:pageLoader 1s linear infinite
+}
+
+.page-loader.fade-out{
+    opacity: 0;
 }
