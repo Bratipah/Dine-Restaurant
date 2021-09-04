@@ -408,6 +408,7 @@ p{
 /* Menu  */
 .menu-section{
     background-color: var(--dark);
+    padding: 60px;
 }
 
 .menu-section .section-title{
@@ -500,27 +501,6 @@ p{
 .menu-item:hover .menu-item-price{
     color: var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  /* Testimonials */
