@@ -318,7 +318,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../images/home-bg.jpg');
+    background-image: url("../images/home-bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
