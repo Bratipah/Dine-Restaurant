@@ -199,25 +199,54 @@ p{
     align-items: center;
     padding: 0 15px;
 }
-.nav-toggler {
-    height: 34px;
-    width: 44px;
-    margin-right: 15px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition:  250ms cubic-bezier(.5, 0, .5, 1);
+}   
+
+.nav__list {
+    list-style: none;
     display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+   
 }
 
-.nav-toggler.active{
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
+    
+}
+.nav__link:hover {
+    color: var(--clr-accent);
+}
+
+.nav__toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
     position: absolute;
     right: 1em;
     top: 1em;
     z-index: 1000;
-    transition: all 0.5s ease;
-    transform: translateX(-200px);
 }
 
 .nav-open .nav {
@@ -225,31 +254,32 @@ p{
     
 }
 
-.nav-open .nav-toggler {
+.nav-open .nav__toggle {
     position: fixed;
 }
 
-.nav-open .menuclick {
+.nav-open .menutap {
     transform: rotate(.625turn);
 }
 
-.nav-open .menuclick::before {
+.nav-open .menutap::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .menuclick::after {
+.nav-open .menutap::after {
     opacity: 0;
 }
 
-.menuclick {
+
+.menutap {
     display: block;
     position: relative;
 }
 
 
-.menuclick,
-.menuclick::before,
-.menuclick::after {
+.menutap,
+.menutap::before,
+.menutap::after {
     background: var(--clr-accent);
     width: 2em;
     height: 3px;
@@ -259,8 +289,8 @@ p{
 
 
 
-.menuclick::before,
-.menuclick::after {
+.menutap::before,
+.menutap::after {
     content: '';
     position: absolute;
     left: 0;
@@ -268,81 +298,8 @@ p{
     
 }
 
-.menuclick::before { top: 7px; }
-.menuclick::after { bottom: 7px; }
-
-.header .nav-toggler.active span{
-    background-color: transparent;
-    transition: background-color 0.5s ease;
-
-}
-
-.header .nav-toggler span{
-    height: 2px;
-    width: 30px;
-    display: block;
-    background-color: var(--white);
-    position: relative;
-}
-
-.header .nav-toggler span::before,
-.header .nav-toggler span::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--white);
-}
-
-.header .nav-toggler span::before{
-    transform: translateY(-8px);
-}
-
-.header .nav-toggler.active span::before{
-    transform: rotate(45deg);
-    transition: transform 0.5s ease;
-}
-
-.header .nav-toggler span::after{
-    transform: translateY(8px);
-}
-
-.header .nav-toggler.active span::after{
-    transform: rotate(-45deg);
-    transition: transform 0.5s ease;
-}
-
-.header .nav{
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 280px;
-    background-color: var(--dark-light);
-    box-shadow: var(--shadow);
-    overflow-y: auto;
-    padding: 80px 0 40px;
-    transition: transform 0.5s ease;
-    transform: translateX(100%);
-}
-
-.header .nav.open{
-    transform: translateX(0%);
-}
-
-.header .nav ul li a{
-    display: block;
-    font-size: 25px;
-    color: var(--white);
-    padding: 10px 30px;
-    transition: color 0.3s ease;
-}
-
-.header .nav ul li a:hover{
-    color: var(--main-color);
-}
+.menutap::before { top: 7px; }
+.menutap::after { bottom: 7px; }
 
 
 
