@@ -203,7 +203,7 @@ p{
 .header .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-white);
     top: 0;
     bottom: 0;
     left: 0;
@@ -235,7 +235,7 @@ p{
     
 }
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-white);
 }
 
 .header .nav__toggle {
@@ -280,7 +280,7 @@ p{
 .menutap,
 .menutap::before,
 .menutap::after {
-    background: var(--clr-accent);
+    background: var(--clr-white);
     width: 2em;
     height: 3px;
     border-radius: 1em;
