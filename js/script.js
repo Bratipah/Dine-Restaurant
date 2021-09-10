@@ -11,19 +11,17 @@ window.addEventListener("load",function(){
 });
 
 // Toggle navbar
-const navToggler = document.querySelector(".nav-toggler")
-navToggler.addEventListener("click",toggleNav)
+const navToggle = document.querySelector('.nav__toggle');
+const navLinks = document.querySelectorAll(".nav__link")
 
-function toggleNav(){
-    navToggler.classList.toggle("active")
-    document.querySelector(".nav").classList.toggle("open")
-}
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
 
-// close nav onclick on nav item
-document.addEventListener("click", function(e){
-    if(e.target.closest("nav-item")){
-        toggleNav();
-    }
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
 })
 
 // Sticky header
