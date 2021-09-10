@@ -213,9 +213,8 @@ p{
 
 .nav-toggler.active{
     position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
+    right: 0;
+    z-index: 1;
     transition: all 0.5s ease;
     transform: translateX(-200px);
 }
