@@ -224,19 +224,19 @@ p{
     
 }
 
-.nav-open .nav__toggle {
+.nav-open .nav-toggler {
     position: fixed;
 }
 
-.nav-open .menutap {
+.nav-open .nav {
     transform: rotate(.625turn);
 }
 
-.nav-open .menutap::before {
+.nav-open .nav::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .menutap::after {
+.nav-open .nav::after {
     opacity: 0;
 }
 
