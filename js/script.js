@@ -11,8 +11,8 @@ window.addEventListener("load",function(){
 });
 
 // Toggle navbar
-const navToggle = document.querySelector('.nav-toggler');
-const navLinks = document.querySelectorAll(".nav-item")
+const navToggle = document.querySelector('.nav__toggle');
+const navLinks = document.querySelectorAll(".nav__link")
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
