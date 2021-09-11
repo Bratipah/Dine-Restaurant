@@ -199,12 +199,13 @@ p{
     align-items: center;
     padding: 0 15px;
 }
-.header .nav-toggler {
+.nav-toggler {
     height: 34px;
     width: 44px;
     margin-right: 15px;
     cursor: pointer;
-    border: none;
+    border: 0;
+    position: absolute;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -212,15 +213,7 @@ p{
     z-index: 1000;
 }
 
-.header .nav-toggler.active{
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    transition: all 0.5s ease;
-    transform: translateX(-200px);
-}
-
-.header .nav-open .nav {
+.nav-open .nav {
     transform: translateX(0);
     
 }
@@ -229,7 +222,7 @@ p{
     position: fixed;
 }
 
-.header .nav-open .menuclick {
+.nav-open .menuclick {
     transform: rotate(.625turn);
 }
 
