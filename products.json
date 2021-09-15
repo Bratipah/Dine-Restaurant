@@ -1,0 +1,68 @@
+{
+    "status": "success",
+    "items":
+    [
+        {
+            "id": 1,
+            "name": "Vegan Fillet",
+            "price": 1500,
+            "img src": "images/menu/1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Tomato baked Macaroni",
+            "price": 2500,
+            "img src": "./images/menu/2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Lentils Courgette Salad ",
+            "price": 1500,
+            "img src": "./images/menu/3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Bologenese Pasta",
+            "price": 2800,
+            "img src": "./images/menu/4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Melting cheese and fruity pie",
+            "price": 1800,
+            "img src": "./images/menu/5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Full Grilled Lemon Thymed Chicken",
+            "price": 5000,
+            "img src": "./images/menu/6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Crispy Italian Chicken and Bacon Salad",
+            "price": 1500,
+            "img src": "./images/menu/7.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Vegan Fillet",
+            "price": 1500,
+            "img src": "./images/menu/8.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Vegan Fillet",
+            "price": 1500,
+            "img src": "./images/menu/9.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Vegan Fillet",
+            "price": 1500,
+            "img src": "./images/menu/10.jpg"
+        }
+    
+
+    ]
+}
