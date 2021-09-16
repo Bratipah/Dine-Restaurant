@@ -1,7 +1,5 @@
 
 window.addEventListener("load",function(){
-    loadJSON();
-    loadCart();
     // Page Loader
     document.querySelector(".page-loader").classList.add("fade-out");
     setTimeout(function(){
@@ -10,6 +8,9 @@ window.addEventListener("load",function(){
 
    // Scroll Animation
     AOS.init();
+
+    loadJSON();
+    loadCart();
 });
 
 // Toggle navbar
