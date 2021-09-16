@@ -25,9 +25,11 @@
               <div class="logo">
                   <a href=""><img src="images/logo.png" alt="logo"></a>
               </div>
-              <div class="cart__icon">
-                <i class="fas fa-cart-plus"></i>
-                <span class="item__total">0</span>
+              <div class="cart">
+                <button type="button" id="cart-btn">
+                    <i class="fas fa-cart-plus"></i>
+                    <span class="cart-count-info">0</span>
+                </button>
               </div>
               <button type="button" class="nav-toggler">
                 <span></span>
@@ -108,223 +110,55 @@
                 <button type="button" class="menu-tab-item" data-target= "#breakfast">Breakfast&Snacks</button>
                 <button type="button" class="menu-tab-item" data-target= "#drinks">Drinks</button>
                 <button type="button" class="menu-tab-item" data-target= "#desserts">Desserts</button>
-            </div>
+            </div> 
         </div>
-        <!-- <div class="row menu-tab-content active" id="meals">
-            <div class="menu-item" data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/1.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title" >
-                    <img src="images/menu/2.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"  data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/3.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/4.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"  data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/5.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/6.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/7.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title" data-aos="fade-up-left">
-                    <img src="images/menu/8.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            </div>
-
-        </div>
-        <div class="row menu-tab-content" id="breakfast">
-            <div class="menu-item">
-                <div class="menu-item-title" data-aos="fade-up-right">
-                    <img src="images/menu/1.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/2.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/3.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-title" data-aos="fade-up-left">
-                    <img src="images/menu/4.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-        </div> 
-        <div class="row menu-tab-content" id="drinks">
-            <div class="menu-item">
-                <div class="menu-item-title"data-aos="fade-up-right">
-                    <img src="images/menu/1.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/2.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/3.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/4.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-        </div>
-        <div class="row menu-tab-content" id="desserts">
-            <div class="menu-item"data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/1.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/2.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item"data-aos="fade-up-right">
-                <div class="menu-item-title">
-                    <img src="images/menu/3.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-            <div class="menu-item" data-aos="fade-up-left">
-                <div class="menu-item-title">
-                    <img src="images/menu/4.jpg" alt="menu item thumbnail">
-                    <h3>Lunch item</h3>
-
-                </div>
-                <div class="menu-item-price">
-                    KSH.40.00
-                </div>
-            </div>
-        </div> -->
-
+        <div class = "product-list">
+            <!-- single item -->
+            <!-- <div class = "product-item">
+              <div class = "product-img">
+                <img src = "images/menu/1.jpg" alt = "product image">
+                <button type = "button" class = "add-to-cart-btn">
+                  <i class = "fas fa-shopping-cart"></i>Add To Cart
+                </button>
+              </div>
+              <div class = "product-content">
+                <h3 class = "product-name">Vegan Fillet</h3>
+                <span class = "product-category">meal</span>
+                <p class = "product-price">Ksh 1500</p>
+              </div>
+            </div> -->
+            <!-- end of single item -->
+          </div>
     </div>
 </section>
 
 <!--------- menu section end ---------->
+
+
+<!---------- Cart section ------------->
+
+<div class = "cart-container">
+    <div class = "cart-list">
+      <!-- single item -->
+      <!-- <div class = "cart-item">
+        <img src = "images/armchair.png" alt = "product image">
+        <div class = "cart-item-info">
+          <h3 class = "cart-item-name">Arm Chair</h3>
+          <span class = "cart-item-category">Chair</span>
+          <span class = "cart-item-price">$120.00</span>
+        </div>
+        <button type = "button" class = "cart-item-del-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+      </div> -->
+      <!-- end of single item  -->
+    </div>
+
+    <div class = "cart-total">
+      <h3>Total: $</h3>
+      <span id = "cart-total-value"></span>
+    </div>
+<!---------- Cart section end ------------->
 
 
 <!--------- Testimionals section  ------------->
