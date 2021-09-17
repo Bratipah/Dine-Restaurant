@@ -3,7 +3,7 @@
  * Ben quriel
  * Bratipah Kioko
 ## Description
-This is a website that showcases the digitizing of a healthy based restaurant suited for non vegetarians mostly.
+This is a website that showcases the digitizing of a healthy based restaurant suited for  vegetarians mostly.
 ## Figma Design 
 ![Image description](https://github.com/Bratipah/Dine-Restaurant/blob/main/images/figma.jpeg)
 
