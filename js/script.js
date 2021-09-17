@@ -1,3 +1,11 @@
+//Cart 
+const cartContainer = document.querySelector('.cart-container');
+const productList = document.querySelector('.product-list');
+const cartList = document.querySelector('.cart-list');
+const cartTotalValue = document.getElementById('.cart-total-value');
+const cartCountInfo = document.getElementById('.cart-count-info');
+let cartItemID = 1;
+
 
 window.addEventListener("load",function(){
     // Page Loader
@@ -8,9 +16,6 @@ window.addEventListener("load",function(){
 
    // Scroll Animation
     AOS.init();
-
-    loadJSON();
-    loadCart();
 });
 
 // Toggle navbar
@@ -50,15 +55,12 @@ window.addEventListener("scroll",function(){
 //     }
 // })
 
-//Cart 
-const cartContainer = document.querySelector('.cart-container');
-const productList = document.querySelector('.product-list');
-const cartList = document.querySelector('.cart-list');
-const cartTotalValue = document.getElementById('cart-total-value');
-const cartCountInfo = document.getElementById('cart-count-info');
-let cartItemID = 1;
 
 
+window.addEventListener('DOMContentLoaded', () => {
+    loadJSON();
+    loadCart();
+});
 // show/hide cart container
 document.getElementById('cart-btn').addEventListener('click', () => {
     cartContainer.classList.toggle('show-cart-container');
