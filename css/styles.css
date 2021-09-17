@@ -487,6 +487,7 @@ p{
 }
 .product-img:hover img{
     opacity: 0.8;
+    content: ".add-to-cart-btn";
 }
 .product-content{
     padding: 1.6rem 0;

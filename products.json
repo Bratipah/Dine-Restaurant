@@ -39,25 +39,25 @@
             "name": "Crispy Italian Chicken and Bacon Salad",
             "price": "1500",
             "category" :"meal",
-            "imgSrc": "./images/menu/7.jpg"
+            "imgSrc": "./images/menu/4.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
             "category" :"meal",
-            "imgSrc": "./images/menu/8.jpg"
+            "imgSrc": "./images/menu/3.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
             "category" :"meal",
-            "imgSrc": "./images/menu/9.jpg"
+            "imgSrc": "./images/menu/2.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
             "category" :"meal",
-            "imgSrc": "./images/menu/10.jpg"
+            "imgSrc": "./images/menu/1.jpg"
         }
     
 
