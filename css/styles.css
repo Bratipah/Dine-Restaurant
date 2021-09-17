@@ -311,7 +311,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark);
+    background-color: var(--main-color);
     color: var(--white);
     padding: 0.5rem;
     font-size: 1.5rem;
