@@ -5,12 +5,12 @@
 ## Description
 This is a website that showcases the digitizing of a healthy based restaurant suited for non vegetarians mostly.
 ## Figma Design 
-![Image description](https://github.com/Bratipah/Photography-Website/blob/bratipah/images/Screenshot%20at%202021-07-31%2001-58-29.png)
+![Image description](https://github.com/Bratipah/Dine-Restaurant/blob/main/images/figma.jpeg)
 
 ## Wireframe
- ![Image description](https://github.com/Bratipah/Photography-Website/blob/bratipah/images/Screenshot%20at%202021-07-31%2002-07-13.png)
+ ![Image description](https://github.com/Bratipah/Dine-Restaurant/blob/main/images/invision%20(1).jpeg)
 ## Project Landing Page
-![Image description](https://github.com/Bratipah/Dine-Restaurant/blob/main/images/Landing%20page.png) 
+![Image description](https://github.com/Bratipah/Dine-Restaurant/blob/main/images/homepage%20readme.png) 
 ## Setup/Installation Requirements
 * Open your terminal in pc and create a folder.
 * Clone this repository into the folder using the command line below,
