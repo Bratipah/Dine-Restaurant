@@ -1,9 +1,9 @@
 //Cart 
-const cartContainer = document.querySelector('.cart-container');
-const productList = document.querySelector('.product-list');
-const cartList = document.querySelector('.cart-list');
-const cartTotalValue = document.getElementById('.cart-total-value');
-const cartCountInfo = document.getElementById('.cart-count-info');
+const cartContainer = document.querySelector(".cart-container");
+const productList = document.querySelector(".product-list");
+const cartList = document.querySelector(".cart-list");
+const cartTotalValue = document.getElementById(".cart-total-value");
+const cartCountInfo = document.getElementById(".cart-count-info");
 let cartItemID = 1;
 
 
@@ -19,16 +19,16 @@ window.addEventListener("load",function(){
 });
 
 // Toggle navbar
-const navToggle = document.querySelector('.nav-toggler');
+const navToggle = document.querySelector(".nav-toggler");
 const navLinks = document.querySelectorAll(".nav-list")
 
 navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+    document.body.classList.toggle(nav-open);
 });
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
+        document.body.classList.remove(nav-open);
     })
 })
 
