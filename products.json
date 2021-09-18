@@ -1,20 +1,20 @@
 [
         {
             "name": "Vegan Fillet",
-            "category" : "meal",
+            "category" : "Add to Cart",
             "price": "1500",
             "imgSrc": "images/menu/1.jpg"
         },
         {
             "name": "Tomato baked Macaroni",
             "price": "2500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/2.jpg"
         },
         {
             "name": "Lentils Courgette Salad ",
             "price": "1500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/3.jpg"
         },
         {
@@ -32,31 +32,31 @@
         {
             "name": "Full Grilled Lemon Thymed Chicken",
             "price": "5000",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/6.jpg"
         },
         {
             "name": "Crispy Italian Chicken and Bacon Salad",
             "price": "1500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/4.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/3.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/2.jpg"
         },
         {
             "name": "Vegan Fillet",
             "price": "1500",
-            "category" :"meal",
+            "category" :"Add to Cart",
             "imgSrc": "./images/menu/1.jpg"
         }
     
